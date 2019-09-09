@@ -1,12 +1,7 @@
 from flask import Flask
+from user_controller import UserController
 
 app = Flask(__name__)
 
-
-@app.route("/")
-def hello():
-    return 'Hello, World'
-
-
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug=True)
